@@ -37,6 +37,9 @@ if [[ -e ${gived_options[0]} ]]; then
 
   # Cas 2: add to path d'un .sh
 elif [[ ${gived_options[0]} = ${options[0]} ]]; then
+
+  finalname="${gived_options[1]##*/}"
+
   if [[ ! -e ${gived_options[1]} ]]; then
     echo "Fichier non existant"
     exit 1
@@ -47,7 +50,7 @@ elif [[ ${gived_options[0]} = ${options[0]} ]]; then
     exit 1
   fi
 
-  if ! cp "${gived_options[1]}" "$Bin_path/${gived_options[1]%.*}" >/dev/null 2>&1; then
+  if ! cp "${gived_options[1]}" "$Bin_path/${finalname%.*}" >/dev/null 2>&1; then
     echo "Copy a échoué"
     exit 1
   fi
