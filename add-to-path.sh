@@ -6,7 +6,7 @@ if [[ "$EUID" != 0 ]]; then
   exit 1
 fi
 #On vérifie si c'est nien sudo ou non
-if [[ ! -n "$SUDO_USER" ]]
+if [[ ! -n "$SUDO_USER" ]]; then
   echo "Lancé avec root, sudo seulement"
   exit 1
 fi
@@ -22,7 +22,7 @@ gived_options=($1 $2 $3)
 # Cas 1: Le add to path normale
 if [[ -e ${gived_options[0]} ]]; then
   echo "Copy ${gived_options[0]} vers le Bin"
-  
+
   if [[ ! -e ${gived_options[0]} ]]; then
     echo "Fichier non existant"
     exit 1
@@ -54,4 +54,6 @@ elif [[ ${gived_options[0]} = ${options[0]} ]]; then
 
   echo "Tout s'est bien passé !"
 
-fi
+else
+  echo "--------Add to Path--------"
+  echo "-sh: Ajoute au path avec la config .sh"
