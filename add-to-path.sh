@@ -11,7 +11,7 @@ if [[ ! -n "$SUDO_USER" ]]; then
   exit 1
 fi
 # Tout est bon
-Bin_path="/home/$SUDO_USER/.bin"
+Bin_path="/home/$SUDO_USER/.local/bin"
 
 # Les tableaux
 options=("-sh")
@@ -57,3 +57,5 @@ elif [[ ${gived_options[0]} = ${options[0]} ]]; then
 else
   echo "--------Add to Path--------"
   echo "-sh: Ajoute au path avec la config .sh"
+
+fi
