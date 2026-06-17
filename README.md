@@ -14,3 +14,9 @@ opt:
 Bah genre la ca va chmod, sa va cut l'extension et tout
 
 Upd: Bah enfaite j'ai du modifier mon visudo genre add .local/bin et secure path du sudo
+
+Pour rm-from-path:
+
+```sudo rm-from-path file```
+utilisation normal
+
