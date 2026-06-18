@@ -33,3 +33,13 @@ opt:
 | -c : Créer un template de projet C
 | -cpp : Créer un template de projet C++
 
+Pour fast-make:
+
+Juste: il fontionne uniquement sur les bases de fichier de create-project, il est un peu inutile car create-project fourni déja un make.sh. Mais lui c'est un make.sh++ il a plus de vérif et tout. C'est pour les tarés de securité celui la
+
+```fast-make -<opt>```
+
+opt:
+| -c: Auto-compile rapidement des fichiers C
+| -cpp: Auto-compile rapidement des fichier C++
+
