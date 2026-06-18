@@ -20,3 +20,12 @@ Pour rm-from-path:
 ```sudo rm-from-path file```
 utilisation normal
 
+
+Pour create-project:
+
+```create-project -<opt>```
+
+opt:
+| -c : Créer un template de projet C
+| -cpp : Créer un template de projet C++
+
