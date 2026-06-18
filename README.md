@@ -5,6 +5,8 @@ JUSTE: Bah enfaite j'ai du modifier mon visudo genre add .local/bin au secure pa
 Ca reviens a ```sudo EDITOR=<n'importe quelle editor> visudo```, chercher ```Defaults secure path``` et ajoutez ```/home/<USERNAME>/.local/bin``` (a notez que la facon de rajouter
 et comme ca ```Defaults_secure_path="/usr/local/sbin:/usr/local/bin:<d'autre path>:/home/<USERNAME>/.local/bin``` ajoutez bien le : oubliez pas)
 
+L'etape au dessus est **OBLIGATOIRE**
+
 Pour add-to-path:
 
 ```sudo add-to-path file``` 
