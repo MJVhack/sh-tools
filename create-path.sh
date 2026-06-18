@@ -14,7 +14,7 @@ if [[ "$langages_asked" = "${langages_opt[0]}" ]]; then
     exit 1
   fi
 
-  if ! touch src/main.c includes/header.h make.sh; then
+  if ! touch src/main.c includes/header.h make.sh README.md; then
     echo "Touch a échoué"
     exit 1
   fi
@@ -50,7 +50,7 @@ elif [[ "$langages_asked" = "${langages_opt[1]}" ]]; then
     exit 1
   fi
 
-  if ! touch src/main.cpp includes/header.hpp make.sh; then
+  if ! touch src/main.cpp includes/header.hpp make.sh README.md; then
     echo "Touch a échoué"
     exit 1
   fi
