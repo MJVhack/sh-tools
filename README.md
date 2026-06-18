@@ -15,7 +15,7 @@ utilisation normale
 opt:
 | -sh : ajoute au path avec une configuration pour les .sh
 
-```sudo ./add-to-path.sh -sh add-to-path.sh```
+```sudo add-to-path.sh -sh add-to-path.sh```
 
 Bah genre la ca va chmod, sa va cut l'extension et tout
 
