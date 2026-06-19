@@ -43,3 +43,8 @@ opt:
 | -c: Auto-compile rapidement des fichiers C
 | -cpp: Auto-compile rapidement des fichier C++
 
+Pour git-setup:
+
+```git-setup <link>```
+
+
