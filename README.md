@@ -47,4 +47,7 @@ Pour git-setup:
 
 ```git-setup <link>```
 
+Pour clear-folder 
+
+```clear-folder <folder>```
 
